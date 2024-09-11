@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="CustomerProfile">
+<listeners>
+<listener class-name="ExtendReportlistener.ExtentReporterNG"></listener>
+</listeners>
+  <test thread-count="5" name="CustomerProfile">   
+    <classes>
+      <class name="jenkinscode.CustomerProfile"/>   
+       <class name="jenkinscode.EditUpdateMergeCustomerProfile"/>
+        <class name="jenkinscode.Searchcustomerprofile"/>  
+        <class name="jenkinscode.settinginvite"/>   
+       <class name="jenkinscode.settingIniviteadmi"/>
+        <class name="jenkinscode.editpremissionsettinginvite"/> 
+         <class name="jenkinscode.Createcampaign"/>   
+       <class name="jenkinscode.Editcampagin"/>
+        <class name="jenkinscode.Deletecampaign"/> 
+         <class name="jenkinscode.cloningcampaign"/> 
+    </classes>
+  </test> 
+  
+</suite> 

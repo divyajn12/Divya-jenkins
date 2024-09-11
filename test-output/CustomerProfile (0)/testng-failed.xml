@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [CustomerProfile (0)]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="CustomerProfile(failed)">
+    <classes>
+      <class name="jenkinscode.CustomerProfile">
+        <methods>
+          <include name="setUp"/>
+          <include name="customerregistertation"/>
+        </methods>
+      </class> <!-- jenkinscode.CustomerProfile -->
+    </classes>
+  </test> <!-- CustomerProfile(failed) -->
+</suite> <!-- Failed suite [CustomerProfile (0)] -->
