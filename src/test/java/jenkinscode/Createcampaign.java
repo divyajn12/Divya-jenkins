@@ -66,8 +66,8 @@ public class Createcampaign
 	        Alldayscheckbox.click();
 	       
 	       
-	        Actions a = new Actions(driver);    //////////////////
-			a.moveToElement(driver.findElement(By.xpath("//input[@formcontrolname='allStores']"))).build().perform(); ////////////
+	        Actions a = new Actions(driver);   
+			a.moveToElement(driver.findElement(By.xpath("//input[@formcontrolname='allStores']"))).build().perform(); 
 			
 			
 	        // Click on start time using JavaScript if overlay persists
@@ -79,23 +79,19 @@ public class Createcampaign
 	         js1.executeScript("arguments[0].click();", selectstarttime);
 	         Thread.sleep(200);
 	        
-	         a.moveToElement(driver.findElement(By.xpath("//label[text()='End Time ']"))).click().build().perform();//////////
-	         driver.findElement(By.xpath("(//input[@placeholder='Select time'])[2]")).click();////////////
+	         a.moveToElement(driver.findElement(By.xpath("//label[text()='End Time ']"))).click().build().perform();
+	         driver.findElement(By.xpath("(//input[@placeholder='Select time'])[2]")).click();
 	         Thread.sleep(2000);
-	         driver.findElement(By.xpath("(//li[@class='ant-time-picker-panel-select-option-selected ng-star-inserted'])[1]")).click();////////////
+	         driver.findElement(By.xpath("(//li[@class='ant-time-picker-panel-select-option-selected ng-star-inserted'])[1]")).click();
 	         Thread.sleep(2000);
 	        
-	         a.moveToElement(driver.findElement(By.xpath("//label[text()='End Time ']"))).click().build().perform();/////////////
+	         a.moveToElement(driver.findElement(By.xpath("//label[text()='End Time ']"))).click().build().perform();
 	        driver.findElement(By.xpath("//input[@formcontrolname='allStores']")).click();
-	       
-	       
 	          Thread.sleep(2000);
 			  // click on select all products
              driver.findElement(By.xpath("//input[@formcontrolname='allProducts']")).click();
              //click on next button
              driver.findElement(By.xpath("//button[@class='next pull-right ant-btn ng-star-inserted ant-btn-default']")).click();
-             
-             
              // Click on offer type
              driver.findElement(By.xpath("//nz-select[@formcontrolname='couponType']")).click();
 

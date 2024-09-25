@@ -80,7 +80,7 @@ public class CustomerProfile {
 
 		// Enter Phone number.
 
-		driver.findElement(By.xpath("(//input[@formcontrolname='mobile'])")).sendKeys("97676767671");
+		driver.findElement(By.xpath("(//input[@formcontrolname='mobile'])")).sendKeys("95822233411");
 
 		// click on Date of birth column.
 
